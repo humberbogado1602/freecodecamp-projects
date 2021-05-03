@@ -1,5 +1,5 @@
 # freecodecamp-projects
-This repo contains all the projects regarding to web developer course from freecodecamp site. Some projects are not finished yet.
+This repo contains all the projects regarding to web design course from freecodecamp site. Some projects are not finished yet.
 <br/>
 The list of projects are:
 
