@@ -1,0 +1,65 @@
+:root {
+	--color-green: rgba(43, 207, 69, 0.8);
+}
+body {
+	background: url(https://preview.redd.it/al0schdiybk51.jpg?width=1920&format=pjpg&auto=webp&s=593106abe87ade6faafaa7c68953981d929cad26)
+		no-repeat fixed center;
+}
+/* .main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+.intro {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	background-color: var(--color-green);
+	padding: 2vh 2vw 2vh 2vw;
+	margin-bottom: 2%;
+	border-radius: 0.5em;
+}
+
+.form {
+	margin: auto;
+	width: 50%;
+	border-radius: 0.5em;
+	padding: 2vh 2vw 2vh 2vw;
+	background-color: var(--color-green);
+}
+
+textarea {
+	resize: none;
+}
+
+label {
+	display: flex;
+	margin-bottom: 0.5em;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	margin-right: 0.5em;
+}
+
+.form-group {
+	margin-bottom: 0.5em;
+}
+
+#submit,
+#t-area,
+#name,
+#email,
+#dropdown,
+#number {
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 400px) {
+	.intro,
+	.form {
+		width: 80%;
+	}
+}

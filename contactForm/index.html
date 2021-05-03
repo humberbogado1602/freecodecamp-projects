@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<section class="intro">
+				<h1 id="title">Contact form</h1>
+				<p id="description">Please fill this form</p>
+			</section>
+			<section class="form">
+				<form id="survey-form">
+					<div class="form-group">
+						<label id="name-label" for="name">Name:</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							required
+							placeholder="Larry Page"
+						/>
+					</div>
+					<div class="form-group">
+						<label id="email-label" for="email">Email:</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="youremail@gmail.com"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label id="number-label" for="number">Choose a number:</label>
+						<input
+							type="number"
+							name="number"
+							id="number"
+							min="1"
+							max="100"
+							placeholder="0-100"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="laptops">Select one brand</label>
+						<!-- dropdown menu -->
+						<select name="laptops" id="dropdown">
+							<option value="hp">HP</option>
+							<option value="asus">Asus</option>
+							<option value="lenovo">Lenovo</option>
+							<option value="dell">Dell</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<!-- radio buttons -->
+					<div>
+						<p>What micro do you have?</p>
+						<label for="i3"
+							><input type="radio" name="micro" id="i3" value="i3" />i3</label
+						>
+						<label for="i5"
+							><input type="radio" name="micro" id="i5" value="i5" />i5</label
+						>
+						<label for="i7"
+							><input type="radio" name="micro" id="i7" value="i7" />i7</label
+						>
+						<label for="i9"
+							><input type="radio" name="micro" id="i9" value="i9" />i9</label
+						>
+						<label for="other-micro"
+							><input
+								type="radio"
+								name="micro"
+								id="other-micro"
+								value="other"
+							/>Other</label
+						>
+					</div>
+
+					<!-- checkboxes -->
+					<div class="form-group">
+						<p>What do you prefer on a laptop?</p>
+						<label for="ram">
+							<input type="checkbox" name="checkbox" id="ram" value="ram" /> RAM
+						</label>
+						<label for="os">
+							<input type="checkbox" name="checkbox" id="os" value="os" /> OS
+						</label>
+						<label for="mem">
+							<input type="checkbox" name="checkbox" id="mem" value="mem" />
+							Memory
+						</label>
+						<label for="graphics">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="graphics"
+								value="graphics"
+							/>
+							Graphics
+						</label>
+					</div>
+					<!-- text area -->
+					<div class="form-group">
+						<p>Any additional thoughts?</p>
+						<textarea
+							name=""
+							id="t-area"
+							rows="10"
+							maxlength="500"
+							placeholder="Add your comment here..."
+						></textarea>
+					</div>
+					<div><button id="submit">Submit</button></div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
