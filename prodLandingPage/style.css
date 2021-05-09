@@ -4,6 +4,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 15vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -11,6 +12,7 @@
 
 #header-img {
 	width: 20%;
+	padding-left: 2vw;
 }
 
 .subtitle {
@@ -19,9 +21,17 @@
 	text-align: center;
 }
 
-/* #nav-bar {
+#nav-bar {
 	padding: 0vh 2vw 0vh 0;
-} */
+}
+
+ul {
+	width: 35vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+}
 
 .nav-img {
 	float: left;
