@@ -21,7 +21,7 @@
 
 .subtitle {
 	margin-top: 25vh;
-	background-color: lawngreen;
+	background-color: #ffb6c1;
 	text-align: center;
 }
 
@@ -72,6 +72,18 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	width: 80vw;
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.brand {
+	width: 20vw;
+	border-radius: 50%;
+	padding: 5%;
 }
 
 #video {
