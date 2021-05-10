@@ -109,3 +109,37 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 }
+
+@media (max-width: 500px) {
+	#header {
+		flex-direction: column;
+		height: 20vh;
+	}
+
+	#header-img {
+		padding: 0;
+	}
+
+	.nav-img {
+		display: flex;
+		justify-content: center;
+	}
+
+	ul {
+		flex-direction: column;
+	}
+
+	.about-grid {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 1vh;
+	}
+	.brand {
+		width: 40vw;
+	}
+	.product {
+		flex-direction: column;
+
+		align-items: center;
+	}
+}
