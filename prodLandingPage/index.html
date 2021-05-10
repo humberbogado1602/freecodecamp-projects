@@ -72,28 +72,38 @@
 			<video
 				id="video"
 				src="./media/pexels-cottonbro-stretch.mp4"
+				autoplay
 				controls
+				loop
 			></video>
 		</div>
 
-		<section class="form">
-			<h3>Contacto</h3>
-			<form
-				class="actual-form"
-				action="https://www.freecodecamp.com/email-submit"
-			>
-				<div>
-					<label for="email">Email</label>
+		<div class="container-2">
+			<section>
+				<h3>Espacio de consultas</h3>
+				<form
+					class="actual-form"
+					action="https://www.freecodecamp.com/email-submit"
+				>
 					<input
+						class="formulary"
 						type="email"
 						name="email"
 						id="email"
 						placeholder="yourEmail@gmail.com"
 					/>
-				</div>
-
-				<input type="submit" value="Enviar" id="submit" />
-			</form>
-		</section>
+					<textarea
+						class="formulary"
+						style="resize: none"
+						name=""
+						id="consulta"
+						cols="30"
+						rows="5"
+						placeholder="Tu consulta... por producto, puntos de venta, etc."
+					></textarea>
+					<input type="submit" value="Enviar" id="submit" />
+				</form>
+			</section>
+		</div>
 	</body>
 </html>
