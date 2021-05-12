@@ -10,31 +10,192 @@
 	<body>
 		<nav id="navbar">
 			<header>
-				<h1>Documentation</h1>
+				<h1>Principios del diseño web responsivo</h1>
 			</header>
 			<ul>
-				<li><a class="nav-link" href="#">Título</a></li>
-				<li><a class="nav-link" href="#">Título</a></li>
-				<li><a class="nav-link" href="#">Título</a></li>
-				<li><a class="nav-link" href="#">Título</a></li>
-				<li><a class="nav-link" href="#">Título</a></li>
+				<li><a class="nav-link" href="#introduction">Introducción</a></li>
+				<li>
+					<a class="nav-link" href="#create_media_query"
+						>Crea una media query</a
+					>
+				</li>
+				<li>
+					<a class="nav-link" href="#make_responsive_img"
+						>Haz una imagen responsiva</a
+					>
+				</li>
+				<li>
+					<a class="nav-link" href="#retina"
+						>Usa una imagen retina para pantallas de alta resolución</a
+					>
+				</li>
+				<li>
+					<a class="nav-link" href="#make_typography_responsive"
+						>Haz tipografía responsiva</a
+					>
+				</li>
 			</ul>
 		</nav>
 		<main id="main-doc">
-			<section class="main-section">
-				<header><h2>Título</h2></header>
+			<!-- section#1 -->
+			<section id="#introduction" class="main-section">
+				<header><h2>Introducción</h2></header>
+				<article>
+					<p>
+						Hay muchos dispositivos que pueden acceder a la web, y vienen en
+						todas las formas y tamaños. El diseño web responsivo es la práctica
+						de diseñar sitios web flexibles que pueden responder a diferentes
+						tamaños de pantalla, orientaciones y resoluciones.
+					</p>
+					<p>
+						En este curso, aprenderás a usar CSS para que tus páginas web luzcan
+						bien, sin importar en qué dispositivo se vean.
+					</p>
+				</article>
 			</section>
-			<section class="main-section">
-				<header><h2>Título</h2></header>
+
+			<!-- section#2 -->
+			<section id="create_media_query" class="main-section">
+				<header><h2>Crea una media query</h2></header>
+				<article>
+					<p>
+						Las consultas de medios (Media Queries) son una nueva técnica
+						introducida en CSS3 que cambia la presentación de contenido basado
+						en diferentes tamaños de viewport. El viewport es el área visible
+						del usuario de una página web, y es diferente dependiendo del
+						dispositivo utilizado para acceder al sitio.
+					</p>
+
+					<p>
+						Puedes tener tantos selectores y estilos dentro de tu media query
+						como desees.
+					</p>
+
+					<p>
+						Este es un ejemplo de una consultas de medios que devuelve el
+						contenido cuando el ancho del dispositivo es menor o igual a 100px:
+					</p>
+
+					<ul>
+						<li><code> @media (max-width: 100px) { /* CSS Rules */ }</code></li>
+					</ul>
+
+					<p>
+						y la siguiente consultas de medios devuelve el contenido cuando la
+						altura del dispositivo es mayor o igual a 350px:
+					</p>
+					<ul>
+						<li><code>@media (min-height: 350px) { /* CSS Rules */ }</code></li>
+					</ul>
+					<p class="callout">
+						Recuerda, el CSS dentro de las consultas de medios se aplica sólo si
+						el tipo de medio coincide con el del dispositivo que se está usando.
+					</p>
+					<p>
+						On screens that are 992px or less, set the background color to blue
+					</p>
+					<code>
+						@media screen and (max-width: 992px) { body {background-color:
+						blue;} }
+					</code>
+					<p>
+						On screens that are 600px or less, set the background color to olive
+					</p>
+					<code>
+						@media screen and (max-width: 600px) { body {background-color:
+						olive;} }
+					</code>
+				</article>
 			</section>
-			<section class="main-section">
-				<header><h2>Título</h2></header>
+
+			<!-- section#3 -->
+			<section id="make_responsive_img" class="main-section">
+				<header><h2>Haz una imagen responsiva</h2></header>
+				<article>
+					<p>
+						Hacer imágenes responsivas con CSS es realmente simple. Sólo tienes
+						que agregar estas propiedades a una imagen:
+					</p>
+					<code>img { max-width: 100%; height: auto; }</code>
+				</article>
 			</section>
-			<section class="main-section">
-				<header><h2>Título</h2></header>
+
+			<!-- section#4 -->
+			<section id="#retina" class="main-section">
+				<header>
+					<h2>Usa una imagen retina para pantallas de alta resolución</h2>
+				</header>
+				<article>
+					<p>
+						La densidad de píxeles es un aspecto que puede ser diferente de un
+						dispositivo a otro, se conoce como "pixels per inch" (PPI) o "dots
+						per inch" (DPI). La pantalla más famosa que aprovecha esto es la
+						conocida como "Pantalla Retina" en los últimos portátiles Apple
+						MacBook Pro, y recientemente en los ordenadores iMac. Debido a la
+						diferencia en la densidad de píxeles entre las pantallas de "Retina"
+						y "No Retina", algunas imágenes que no han sido hechas con una
+						pantalla de alta resolución en mente podrían verse "pixeladas"
+						cuando se muestran en una pantalla de alta resolución.
+					</p>
+					<p>
+						La forma más sencilla de hacer que tus imágenes aparezcan
+						correctamente en pantallas de alta resolución, es definir sus
+						valores de ancho <code>width</code> y de altura
+						<code>height</code> como sólo la mitad de lo que es el archivo
+						original. Aquí hay un ejemplo de una imagen que solo utiliza la
+						mitad de la altura y ancho originales:
+					</p>
+					<code>
+						&lt;style&gt; img { height: 250px; width: 250px; }
+						&lt;&sol;style&gt;</code
+					>
+					<div></div>
+					<code>
+						&lt;img src="coolPic500x500" alt="A most excellent picture"
+						&sol;&gt;
+					</code>
+				</article>
 			</section>
-			<section class="main-section">
-				<header><h2>Título</h2></header>
+
+			<!-- section#5 -->
+			<section id="make_typography_responsive" class="main-section">
+				<header><h2>Haz tipografía responsiva</h2></header>
+				<article>
+					<p>
+						En lugar de usar <code>em</code> o <code>px</code> puedes usar
+						unidades viewport.
+					</p>
+					<p>
+						Como los porcentajes, son unidades relativas, pero se basan en
+						objetos diferentes. Las unidades de viewport son relativas a las
+						dimensiones del viewport (ancho o alto) de un dispositivo, y los
+						porcentajes son relativos al tamaño del elemento contenedor padre.
+					</p>
+					<p>Las cuatro diferentes unidades de viewport son:</p>
+					<ul>
+						<li>
+							<code>vw</code> (viewport width): <code>10vw</code> sería el 10%
+							del ancho del viewport.
+						</li>
+						<li>
+							<code>vh</code> (viewport height): <code>3vh</code> sería el 3%
+							del alto del viewport.
+						</li>
+						<li>
+							<code>vmin</code> (viewport mínimo): <code>70vmin</code> sería el
+							70% de la dimensión más pequeña del viewport (altura o ancho).
+						</li>
+						<li>
+							<code>vmax</code> (viewport máximo): <code>100vmax</code> sería el
+							100% de la dimensión más grande del viewport (altura o ancho).
+						</li>
+					</ul>
+					<p>
+						Aquí hay un ejemplo que establece una etiqueta `body` al 30% del
+						ancho del viewport.
+					</p>
+					<code>body { width: 30vw; }</code>
+				</article>
 			</section>
 		</main>
 	</body>
